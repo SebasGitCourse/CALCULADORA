@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5cm 0;
+}
+
+#contenedorPrincipal {
+    border: double 5px black;
+    border-radius: 15px;
+    padding: 1cm;
+}
+
+#resultado {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    height: 3cm;
+    text-align: right;
+    padding: 0 0.5cm;
+    font-size: 1cm;
+}
+
+#contenedorBotones {
+    /* border: solid 5px red; */
+    display: grid;
+    grid-template-areas: 
+    "btnAC btnEliminar btnPorcentaje btnDivision"
+    "btnNum7 btnNum8 btnNum9 btnMultiplicacion"
+    "btnNum4 btnNum5 btnNum6 btnResta"
+    "btnNum1 btnNum2 btnNum3 btnSuma"
+    ;
+    gap: 0.5cm;
+    margin: 0.5cm 0 0 0;
+}
+
+#Num1{
+    grid-area: btnNum1;
+}
+
+#Num2 {
+    grid-area: btnNum2;
+}
+
+#Num3 {
+    grid-area: btnNum3;
+}
+
+#Num4 {
+    grid-area: btnNum4;
+}
+
+#Num5 {
+    grid-area: btnNum5;
+}
+
+#Num6 {
+    grid-area: btnNum6;
+}
+
+#Num7 {
+    grid-area: btnNum7;
+}
+
+#Num8 {
+    grid-area: btnNum8;
+}
+
+#Num9 {
+    grid-area: btnNum9;
+}
+
+#btnSuma {
+    grid-area: btnSuma;
+}
+
+#btnResta {
+    grid-area: btnResta;
+}
+
+#btnMultiplicacion {
+    grid-area: btnMultiplicacion;
+}
+
+#btnAC {
+    grid-area: btnAC;
+}
+
+#btnEliminar {
+    grid-area: btnEliminar;
+}
+
+#btnPorcentaje {
+    grid-area: btnPorcentaje;
+}
+
+#btnDivision {
+    grid-area: btnDivision;
+}
+
+.boton {
+    height: 2.5cm;
+    border-radius: 15px;
+    background-color: lightblue;
+    font-size: 0.5cm;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.boton:hover {
+    background-color: rgba(172, 255, 47, 0.497);
+}
+
+#btnIgual {
+    border-radius: 50%;
+    background-color: orange;
+}
